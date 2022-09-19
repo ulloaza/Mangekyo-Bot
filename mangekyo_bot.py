@@ -98,7 +98,7 @@ async def on_reaction_add(reaction, user):
             url = re.sub("\?guild_id=\d+\&\#", '', url)
             
             # Send response then post to notion
-            await channel.send('👈🤘🫰 Sharingan Copy Wheel! 👈🤘🫰\n\t\t\t\tCopied your jutsu to Notion!')
+            await channel.send('Copying your post to notion!')
             try:
                 addEntry(url, title)
             except:
@@ -112,7 +112,7 @@ async def on_reaction_add(reaction, user):
             title = content.split(" https")[0]
 
             # Send response then post to notion
-            await channel.send('👈🤘🫰 Sharingan Copy Wheel! 👈🤘🫰\n\t\t\t\tCopied your jutsu to Notion!')
+            await channel.send('Copying your post to notion!')
             try:
                 addEntry(url, title)
             except:
